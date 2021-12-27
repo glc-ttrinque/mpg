@@ -23,25 +23,34 @@ npm start
 ### Get league usernames
 
 Method: GET
+
 Route: localhost:3001/league/mpg_league_${league_id}
 
 ### Create new league
 
 Method: POST
+
 Route : localhost:3001/league
+
 Payload: 
+```sh
 {
 id: string,
 name: string,
 description?: string,
 adminId: string
 }
+```
 
 ### Modify Team Name
 
 Method: PATCH
+
 Route: localhost:3001/team/mpg_team_${team_id}
+
 Payload: 
+```sh
 {
 name: string,
 }
+```
