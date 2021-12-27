@@ -23,7 +23,7 @@ module.exports = {
             name: Joi.string()
           }),
           params: Joi.object({
-            teamId: Joi.string().regex(/mpg_team_\d{1,}(_\d{1,})?/)
+            teamId: Joi.string().regex(/mpg_team_\d{1,}(_\d{1,})?$/)
           })
         }
       }
